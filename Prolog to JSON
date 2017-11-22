@@ -1,0 +1,21 @@
+%commands to the interpreter are submitted from stdin input ('show input' box below)
+%'halt.' will be automatically appended to stdin input.
+%swi-prolog 7.2.3
+
+xloco :-write('{"xloco":'), usuario, write('}').
+usuario :- write('[{"usuario":'), write('profegil'), ontologia,write('}]') .
+ontologia :- write('[{"nbontologia":'),write('empresa,'), ideal, write('}]').
+ideal :- write('[{nbideal: '), atributos, write('}]').
+atributos :- atributo.
+atributo:- write('contador, '), tipoatributo, write('}]').
+tipoatributo :-write('[{"atributos: "'), metodo , write('}') | write('entero ') | write('decimal ').
+metodo:-write('"isan":fuction() '), a0.
+a0:-decision | asignacion, write('}').
+decision:-write('if(precio<'),verdadero.
+verdadero:-asignacion.
+asignacion:-write('{precio = '),write('24700; ').
+:- xloco.
+
+///////////////Resultado////////////////
+
+{"xloco":[{"usuario":profegil[{"nbontologia":empresa,[{nbideal: contador, [{"atributos: ""isan":fuction() {precio = 24700; }}]}]}]}]}
