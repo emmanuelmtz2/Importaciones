@@ -1,0 +1,57 @@
+<xproba>
+<bosque>
+<arbol> 
+          <nbarbol> clientes </nbarbol>  <frecuencia> 100 </frecuencia>
+ <atributo>
+          <nbatributo> tienda </nbatributo>
+          <valor> 
+             <frecuencia> 25 </frecuencia>
+             <encendido> 0 </encendido>
+             <nbvalor> aquí </nbvalor>
+ 
+             <atributo>
+                      <nbatributo> producto </nbatributo>
+                      <valor>
+                      <frecuencia> 20 </frecuencia>
+                      <encendido>  1  </encendido>
+                      <nbvalor>    A  </nbvalor>
+                      </valor>
+
+                     <valor>
+                     <frecuencia> 5 </frecuencia>
+                     <encendido> 0 </encendido>
+                     <nbvalor> B </nbvalor>
+                     </valor>
+            </atributo>
+          </valor>
+
+<valor>
+ <frecuencia> 75 </frecuencia>
+ <encendido> 0 </encendido>
+ <nbvalor> allá </nbvalor>
+
+  <atributo>
+    <nbatributo> tienda </nbatributo>
+      <valor>
+      <frecuencia> 5 </frecuencia>
+      <encendido> 0 </encendido>
+      <nbvalor> A </nbvalor>
+     
+    <valor>
+     <frecuencia> 20 </frecuencia>
+     <encendido> 0 </encendido>
+     <nbvalor> B </nbvalor>
+   </valor>
+   <valor>
+     <frecuencia> 50 </frecuencia>
+     <encendido> 0 </encendido>
+     <nbvalor> C </nbvalor>
+  </valor>
+</atributo>
+
+
+</valor>
+</atributo>
+</arbol>
+</bosque>
+</xproba>
