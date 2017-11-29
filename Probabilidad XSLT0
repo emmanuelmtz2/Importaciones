@@ -1,0 +1,20 @@
+
+<!-- para todos los descendientes de bosque-->
+  <xsl:if test="@encendido='1'">
+
+<!-- verifica si está encendido --><br/>
+encendido:
+<xsl:value-of select="position()"/>
+<xsl:value-of select="@nbvalor"/> hijo de 
+<xsl:value-of select="../../@nbvalor"/>
+<xsl:value-of select="../../@nbarbol"/><br/>
+<xsl:for-each select="ancestor-or-self::valor">
+ condicional=<xsl:value-of select="@frecuencia div ../../@frecuencia"/>
+   Nombre=<xsl:value-of select="@nbvalor"/><br/>
+</xsl:for-each>
+<br/>
+  </xsl:if>
+</xsl:for-each><br/>
+
+</xsl:template>
+</xsl:stylesheet>
