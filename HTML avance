@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <title>Tarea</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <style> 
+            body{
+                font-family: serif;
+                color: black;
+                text-align: left;
+                font-size: 20px;
+                background-color: lightgray;
+            }
+            h1{
+                font-family: sans-serif;
+                color: white;
+                text-align: center;
+            }
+            h3{
+                font-family: sans-serif;
+                color: darkred;
+                text-align: center;
+            }
+            h4{
+                font-family: sans-serif;
+                color: darkred;
+                text-align: left;
+            }
+            header{
+                background-color: gray;
+            }
+            aside, pre{
+                text-align: center;
+            }
+            table,td ,th{
+                border: 1px solid gray;
+                margin: 0 auto;
+                text-align: center;
+            }
+           
+            section{
+                background-color: lightgray;
+            }
+            footer{
+                background-color: Gray;
+                color: white;
+            }
+           p{
+            font-size: 16px;
+           }
+             .navbar {
+              margin-bottom: 0;
+             border-radius: 0;
+                     }
+                     .bg-1 { 
+      background-color: lightgray; /* Black Gray */
+      color: #fff;
+  }
+  .bg-2 { 
+      background-color: white; /* Black Gray */
+      color: black;
+  }
+  .bg-3 { 
+      background-color: lightgray; /* Black Gray */
+      color: black;
+  }
+  .container-fluid {
+      padding: 30px 40px;
+  }
+  
+        </style>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <script src="mostrarinfo.js"></script>
+        
+        <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a>Menu</a></li>
+        <li><a href="#XLOCO">XLOCO</a></li>
+      
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="jumbotron">
+<h1>Ingeniería del conocimiento</h1>
+</div>
+  <div class="container-fluid bg-3" id="XLOCO">
+      <h4>Datos</h4>
+      <div class="row">  
+      <div class="col-sm-3"> <!-- tiene 3 de los 12 bloques posibles, abre -->
+
+        <p>Nombre del primer nbmetodo </p><!-- metodo en javascript -->
+        <input placeholder="Nombre del nb metodo" id="text">
+        <button type="button" class="btn-warning" onclick="texto()">Enviar</button>
+
+        <p>Nombre del atributo </p> <!-- atributo en javascript --> 
+        <input placeholder="Nombre del atributo" id="text1">
+        <button type="button" class="btn-warning" onclick="texto1()">Enviar</button>
+        
+        <p>Valor del operando</p> <!-- operando en javascript --> 
+        <input placeholder="Valor del operando" id="text2">
+        <button type="button" class="btn-warning" onclick="texto2()">Enviar</button>
+
+        <p>condicion</p> <!-- operando en javascript --> 
+        <input placeholder="condicion" id="text3">
+        <button type="button" class="btn-warning" onclick="texto3()">Enviar</button>
+
+        <p>nbmetodo</p> <!-- operando en javascript --> 
+        <input placeholder="Nombre del nbmetodo" id="text4">
+        <button type="button" class="btn-warning" onclick="texto4()">Enviar</button>
+
+        <p>valor de la tasa</p> <!-- operando en javascript --> 
+        <input placeholder="valor de la tasa" id="text5">
+        <button type="button" class="btn-warning" onclick="texto5()">Enviar</button>
+
+        <p>Valor del segundo operando</p> <!-- operando en javascript --> 
+        <input placeholder="valor del operando" id="text6">
+        <button type="button" class="btn-warning" onclick="texto6()">Enviar</button>
+
+        <p>Valor del segundo atributo</p> <!-- operando en javascript --> 
+        <input placeholder="valor del atributo" id="text7">
+        <button type="button" class="btn-warning" onclick="texto7()">Enviar</button>
+
+        <p>Valor del tercer operando</p> <!-- operando en javascript --> 
+        <input placeholder="valor del operando" id="text8">
+        <button type="button" class="btn-warning" onclick="texto8()">Enviar</button>
+
+      </div> <!-- tiene 3 de los 12 bloques posibles, cierra -->
+ 
+      <div class="col-sm-3"><!-- tiene 3 de los 9 bloques posibles, 2da que abre -->
+
+        
+      </div><!-- 3 de los 9 , cierra -->
+
+            <div class="col-sm-6"> <!-- tiene 6 de los 6 bloques posibles, abre -->
+
+ 
+<p>XLOCO</p>
+<p> < metodos > </p>
+<p> < metodo > < nbmetodo > </p>
+<p id="demo"></p>
+<p> < /nbmetodo ></p>
+ <p> < /metodo > </p>
+<p> < /metodos > </p>
+<p> < asignacion > </p>
+<p> < atributo > </p>
+<p id="atributo"></p>
+<p> < / atributo > </p>
+<p> < operando > </p>
+    <p id="operando"></p>
+ <p>   < / operando > </p>
+  <p>< /asignacion > </p>
+
+ <p> < decision ></p>
+    <p>< condicion > </p>
+    <p id="condicion"></p>
+   
+    <p> < /condicion ></p>
+    <p>< verdadero ></p>
+       <p> < metodo ></p>
+       <p>< nbmetodo ></p>
+       <p id="nbmetodo"></p>
+       <p>< /nbmetodo ></p>
+         <p> < asignacion ></p>
+           <p>< atributo ></p>
+            <p id="tasa"></p>
+           <p>< /atributo ></p>
+           <p>< operando ></p>
+           <p id="operando1"></p>
+           <p>< /operando ></p>
+         <p>< /asignacion > </p>
+         <p>< asignacion ></p>
+           <p>< atributo ></p>
+           <p id="atributo1"></p>
+           <p>< /atributo></p>
+           <p>< operando ></p>
+           <p id="operando2"></p>
+           <p>< /operando ></p>
+         <p> < /asignacion > </p>
+       <p> < /metodo > </p>
+    <p>< /verdadero ></p>
+
+
+         </div><!-- tiene 6 de los 6 bloques posibles, cierra-->
+
+         </div>
+        </div>
+   
+        <footer class="container-fluid"> <!-- espacio final para comentarios -->
+
+         
+            <p>Copyright clase de Ingeniería</p>
+            
+        </footer>
+            
+    </body>
+    
+</html>
+----------------------------------------------- despues sigue el javascript mostrarinfo.js se guardan por separado------------------
+"use strict";
+function texto() {
+    var x;
+
+    x = document.getElementById("text").value;
+   
+    document.getElementById("demo").innerHTML = x;
+
+
+}
+function texto1() {
+    var y;
+
+    y = document.getElementById("text1").value;
+   
+    document.getElementById("atributo").innerHTML = y;
+
+
+}
+function texto2() {
+    var z;
+
+    z = document.getElementById("text2").value;
+   
+    document.getElementById("operando").innerHTML = z;
+
+
+}
+function texto3() {
+    var x1;
+
+    x1 = document.getElementById("text3").value;
+   
+    document.getElementById("condicion").innerHTML = x1;
+
+
+}
+function texto4() {
+    var x2;
+
+    x2 = document.getElementById("text4").value;
+   
+    document.getElementById("nbmetodo").innerHTML = x2;
+
+
+}
+function texto5() {
+    var x3;
+
+    x3 = document.getElementById("text5").value;
+   
+    document.getElementById("tasa").innerHTML = x3;
+
+
+}
+function texto6() {
+    var x4;
+
+    x4 = document.getElementById("text6").value;
+   
+    document.getElementById("operando1").innerHTML = x4;
+
+
+}
+function texto7() {
+    var x4;
+
+    x4 = document.getElementById("text7").value;
+   
+    document.getElementById("atributo1").innerHTML = x4;
+
+
+}
+function texto8() {
+    var x4;
+
+    x4 = document.getElementById("text8").value;
+   
+    document.getElementById("operando2").innerHTML = x4;
+
+
+}
